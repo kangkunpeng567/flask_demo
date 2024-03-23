@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title> 流程控制!!! </title>
+
+</head>
+
+
+<body>
+
+{% if age>18 %}
+    <div> 大于18随！</div>
+{%  elif age==18 %}
+    <div> dengyu 18随！</div>
+{%  else %}
+    <div> xiaoyu18随！</div>
+{% endif %}
+
+{% for i in books %}
+    <div>{{ i.name }},{{ i.autho }}</div>
+{% endfor %}
+
+
+
+    <!--用于INDEX8继承-->
+{% block  body  %} {% endblock  %}
+
+</body>
+
+
+</html>
+
+
